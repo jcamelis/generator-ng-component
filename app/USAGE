@@ -8,3 +8,4 @@ Available Generators:
   yo ng-component:service [name]
   yo ng-component:factory [name]
   yo ng-component:filter [name]
+  yo ng-component:resource [name]

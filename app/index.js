@@ -19,6 +19,7 @@ var NgComponentGenerator = yeoman.generators.Base.extend({
       'directiveDirectory': this.options.directiveDirectory || 'app/components/',
       'filterDirectory': this.options.filterDirectory || 'app/components/',
       'serviceDirectory': this.options.serviceDirectory || 'app/components/',
+      'resourceDirectory': this.options.resourceDirectory || 'app/components/',
       'basePath': this.options.basePath || 'app',
       'moduleName': this.options.moduleName || '',
       'modulePrompt': this.options.hasOwnProperty('modulePrompt') ?
@@ -34,7 +35,8 @@ var NgComponentGenerator = yeoman.generators.Base.extend({
       'componentTemplates': this.options.component || '',
       'decoratorTemplates': this.options.decorator || '',
       'providerTemplates': this.options.provider || '',
-      'routeTemplates': this.options.route || ''
+      'routeTemplates': this.options.route || '',
+      'resourceTemplates': this.options.route || ''
     };
 
     if (this.options.forceConfig) {

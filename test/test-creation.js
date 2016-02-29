@@ -268,5 +268,17 @@ describe('ng-component generator', function () {
       });
     });
 
+    describe('Resource', function () {
+      it('should generate a new component', function (done) {
+        generatorTest('component', 'foo', { dir: 'app/components/' }, function() {
+          yoAssert.file([
+            path.join('app/components/foo', 'foo.resource.coffee'),
+            path.join('app/components/foo', 'foo.resource.spec.coffee')
+          ]);
+          done();
+        });
+      });
+    });
+
   });
 });
